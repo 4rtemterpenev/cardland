@@ -1,0 +1,171 @@
+.hero
+  &-block
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    &__text
+      display: flex
+      flex-direction: row
+      width: 50%
+      align-items: center
+    &__subtitle
+      display: flex
+      flex-direction: row
+    &__title
+      +bold
+      font-size: 86px
+      line-height: 92px
+      color: #000B26
+    &__image
+      width: 70%
+      img
+        width: 100%
+    &__main
+      display: flex
+      flex-direction: column
+      +medium
+      font-size: 57px
+      line-height: 72px
+      color: #000B26
+    &__price
+      font-size: 200px
+      +bold
+      color: #FE715A
+
+@media (max-width: 2000px)
+  .hero
+    &-block
+      &__title
+        font-size: 76px
+      &__image 
+        width: 40%
+@media (max-width: 1450px)
+  .hero
+    &-block
+      justify-content: flex-start
+      &__main
+        font-size: 46px
+        line-height: 60px
+      &__price
+        font-size: 180px
+  .big-text
+    font-size: 70px
+    line-height: 96px
+@media (max-width: 1250px)
+  .hero
+    &-block
+      &__main
+        font-size: 36px
+        line-height: 50px
+      &__price
+        font-size: 150px
+  .big-text
+    font-size: 60px
+    line-height: 86px
+@media (max-width: 1150px)
+  .hero
+    &-block
+      &__main
+        font-size: 34px
+        line-height: 38px
+      &__price
+        font-size: 130px
+  .ruble
+    font-size: 60px
+    line-height: 76px
+  .big-text
+    font-size: 50px
+    line-height: 64px
+
+
+@media (max-width: 950px)
+  .hero
+    &-block
+      &__image img
+        width: 60%
+      &__image
+        width: 100%
+        display: flex
+        justify-content: center
+      &__price
+        font-size: 100px
+      &__main
+        font-size: 26px
+  .big-text
+    font-size: 38px
+    line-height: 50px
+  .ruble
+    font-size: 50px
+    line-height: 65px
+@media (max-width: 750px)
+  .hero
+    &-block
+      &__main
+        font-size: 26px
+        line-height: 32px
+        margin-right: 5px
+      &__price
+        font-size: 90px
+  .big-text
+    font-size: 38px
+    line-height: 40px
+  .ruble
+    font-size: 40px
+    line-height: 55px
+
+@media (max-width: 620px)
+  .hero
+    &-block
+      &__main
+        font-size: 20px
+        line-height: 26px
+        margin-right: 5px
+      &__price
+        font-size: 80px
+  .big-text
+    font-size: 30px
+    line-height: 36px
+  .ruble
+    font-size: 35px
+    line-height: 40px
+@media (max-width: 500px)
+  .hero
+    padding-top: 0
+    &-block
+      display: flex
+      flex-direction: column
+      &__text
+        width: 100%
+        margin-bottom: 15px
+      &__main
+        font-size: 25px
+        line-height: 32px
+      &__price
+        font-size: 92px
+        line-height: 120px
+      &__image
+        width: 100%
+        img
+          width: 100%
+  .big-text
+    font-size: 37px
+    line-height: 47px
+  .ruble
+    font-size: 37px
+    line-height: 47px
+@media (max-width: 400px)
+  .hero
+    &-block
+      &__main
+        font-size: 20px
+        line-height: 26px
+      &__price
+        font-size: 80px
+        line-height: 110px
+  .big-text
+    font-size: 30px
+    line-height: 36px
+  .ruble
+    font-size: 32px
+    line-height: 40px

@@ -1,0 +1,55 @@
+.links
+  background: radial-gradient(43.06% 50.59% at 25.55% 61.66%, #0066D1 0%, #4DC3FE 100%)
+  &-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding-top: 50px
+    padding-bottom: 50px
+    &__title
+      +medium
+      font-size: 32px
+      line-height: 40px
+      color: #FFFFFF
+    &__items
+      display: flex
+      flex-direction: row
+    &__item
+      margin-right: 50px
+      transition: 0.5s
+      &:last-child
+        margin-right: 0
+      &:hover
+        transform: translateY(-5px)
+        transition: 0.5s
+    &__image
+      display: flex
+      justify-content: center
+      align-items: center
+@media (max-width: 1150px)
+  .links
+    &-block
+      flex-direction: column
+      &__title
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 15px
+@media (max-width: 800px)
+  .links
+    &-block
+      width: 100%
+      &__image
+        width: 100%
+        img
+          width: 100%
+      &__items
+        justify-content: space-between
+        width: 100%
+      &__item
+        margin-right: 15px
+@media (max-width: 550px)
+  .links
+    &-block
+      padding-top: 15px
+      padding-bottom: 15px

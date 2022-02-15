@@ -1,0 +1,117 @@
+.footer
+  padding-top: 150px
+  padding-bottom: 30px
+  &-block
+    border-top: 2px solid #000B26
+    padding-top: 40px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__info
+      display: flex
+    &__text span
+      +medium
+      font-size: 24px
+      line-height: 30px
+      color: #000B26
+    &__text
+      margin-right: 80px
+      display: flex
+      flex-direction: column
+    &__year
+      display: flex
+      flex-direction: column
+      margin-bottom: 25px
+    &__social
+      display: flex
+      flex-direction: row
+      align-items: center
+    &__item
+      display: flex
+      flex-direction: row
+      margin-left: 16px
+    &__share
+      display: flex
+      flex-direction: row
+      align-items: center
+      a
+        display: flex
+        align-items: center
+    &__email
+      display: flex
+      flex-direction: column
+      align-items: center
+      a
+        +medium
+        font-size: 32px
+        line-height: 40px
+        color: #000B26
+        text-decoration: none
+        margin-bottom: 10px
+        border-bottom: 2px solid #fff
+        transition: 0.5s
+        &:last-child
+          margin-bottom: 0
+        &:hover
+          border-bottom: 2px solid #000B26
+          transition: 0.5s
+    &__link
+      display: flex
+      align-items: center
+    &__links a
+      margin-bottom: 16px
+      display: block
+      &:last-child
+        margin-bottom: 0
+    &__linked
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      margin-bottom: 25px
+    &__add
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+      
+.visible
+  display: flex
+  flex-direction: column
+  display: none
+.visible .footer-block__info
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+.visible .footer-block__text
+  margin-right: 0
+.visible .footer-block__email a
+  margin-bottom: 0
+.visible .footer-block__email
+  margin-bottom: 30px
+.visible .footer-block__social
+  margin-bottom: 20px
+  justify-content: center
+  align-items: center
+.footer-block__linked a
+  margin-right: 16px  
+  &:last-child
+    margin-right: 0
+@media (max-width: 950px)
+  .show
+    display: none
+  .visible
+    display: block
+  .footer
+    padding-top: 80px
+@media (max-width: 550px)
+  .text
+    font-size: 20px !important
+    line-height: 25px !important
+  .footer-block__add
+    width: 80%
+    img
+      width: 100%
+@media (max-width: 375px)
+  .footer
+    padding-top: 30px
